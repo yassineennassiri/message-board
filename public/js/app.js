@@ -11,5 +11,5 @@ button.addEventListener("click", async () => {
   });
 
   const data = await response.json();
-  alert("backend replied: " + data.received);
+  alert("backend replied: " + data.text);
 });
