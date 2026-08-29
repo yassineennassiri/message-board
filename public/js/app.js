@@ -12,7 +12,7 @@ async function loadMessages() {
     const item = document.createElement("li");
     item.textContent = message.text;
     list.appendChild(item);
-  });
+  });  // This is the part of the code that fetches messages from the server and displays them in the message list.
 }
 
 button.addEventListener("click", async () => {
@@ -22,7 +22,7 @@ button.addEventListener("click", async () => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text: text }),
-  });
+  }); // This is the part of the code that sends the message to the server when the send button is clicked.
 
   input.value = "";
   loadMessages();
